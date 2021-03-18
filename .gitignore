@@ -1,0 +1,2 @@
+ #exclude library backup files
+ *.l#*
