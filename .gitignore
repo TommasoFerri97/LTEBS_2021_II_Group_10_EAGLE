@@ -1,7 +1,7 @@
 <<<<<<< HEAD
 # ignore everything
 *.l#*
-
+*.s#*
 
 =======
  #exclude library backup files
