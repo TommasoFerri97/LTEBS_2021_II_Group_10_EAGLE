@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-# ignore everything
+#exclude library backup files
 *.l#*
-*.s#*
 
-=======
- #exclude library backup files
- *.l#*
- *.s#*
->>>>>>> refs/remotes/origin/master
+#exclude schematic backup files
+*.s#*
