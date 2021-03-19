@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 # ignore everything
 *.l#*
 
 
+=======
+ #exclude library backup files
+ *.l#*
+ *.s#*
+>>>>>>> refs/remotes/origin/master
