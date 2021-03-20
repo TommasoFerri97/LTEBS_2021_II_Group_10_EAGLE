@@ -3,3 +3,6 @@
 
 #exclude schematic backup files
 *.s#*
+
+#exclude board backup files
+*.b#*
