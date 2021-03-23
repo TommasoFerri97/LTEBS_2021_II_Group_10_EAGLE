@@ -2,8 +2,8 @@
 > 2021 - II semester - First Assignment
 
 ## Authors (Group 10)
-  - [**Dario Comini**](https://github.com/TommasoFerri97) 
-  - [**Tommaso Ferri**](https://github.com/DarioComini)
+  - [**Dario Comini**](https://github.com/DarioComini) 
+  - [**Tommaso Ferri**](https://github.com/TommasoFerri97)
 
 ## Description
 Design a schematic, a PCB, and custom devices using Autodesk EAGLE software.
