@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="2" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -198,34 +198,40 @@ voltages on the control pins to be applied before the
 supply pin, protecting the device from potential
 damage. &lt;h5&gt;
 
+Find more information in the &lt;a href=https://www.ti.com/lit/ds/symlink/tmux1208.pdf""&gt;datasheet&lt;/a&gt;.
+
 &lt;h3&gt; FEATURES &lt;h3&gt;
 
-&lt;h5&gt; 
-• Rail to Rail Operation
-• Bidirectional Signal Path 
-• Low On-Resistance: 5 Ω
-• Wide Supply Range: 1.08 V to 5.5 V
-• -40°C to +125°C Operating Temperature
-• 1.8 V Logic Compatible
-• Fail-Safe Logic
-• Low Supply Current: 10 nA
-• Transition Time: 14 ns
-• Break-Before-Make Switching
-• ESD Protection HBM: 2000 V
-• Industry-Standard TSSOP and QFN Packages
+&lt;h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Rail to Rail Operation
+&lt;li&gt;Bidirectional Signal Path 
+&lt;li&gt;Low On-Resistance: 5 Ω
+&lt;li&gt;Wide Supply Range: 1.08 V to 5.5 V
+&lt;li&gt;-40°C to +125°C Operating Temperature
+&lt;li&gt;1.8 V Logic Compatible
+&lt;li&gt;Fail-Safe Logic
+&lt;li&gt;Low Supply Current: 10 nA
+&lt;li&gt;Transition Time: 14 ns
+&lt;li&gt;Break-Before-Make Switching
+&lt;li&gt;ESD Protection HBM: 2000 V
+&lt;li&gt;Industry-Standard TSSOP and QFN Packages
+&lt;/ul&gt;
 &lt;h5&gt;
 
 &lt;h3&gt; APPLICATIONS &lt;h3&gt;
 
-&lt;h5&gt; 
-• Analog and Digital Multiplexing / Demultiplexing
-• HVAC: Heating, Ventilation, and Air Conditioning
-• Smoke Detectors
-• Video Surveillance
-• Electronic Point of Sale
-• Battery-Powered Equipment
-• Appliances
-• Consumer Audio
+&lt;h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Analog and Digital Multiplexing / Demultiplexing
+&lt;li&gt; HVAC: Heating, Ventilation, and Air Conditioning
+&lt;li&gt; Smoke Detectors
+&lt;li&gt; Video Surveillance
+&lt;li&gt; Electronic Point of Sale
+&lt;li&gt; Battery-Powered Equipment
+&lt;li&gt; Appliances
+&lt;li&gt; Consumer Audio
+&lt;/ul&gt;
 &lt;h5&gt;</description>
 <gates>
 <gate name="G$1" symbol="TMUX1208" x="0" y="0"/>
@@ -280,7 +286,10 @@ pair, so that 1.8-V, 2.5-V, or 3.3-V parts can
 communicate with 5-V parts without any additional
 protection. External pull-up resistors pull the bus up
 to the desired voltage level for each channel. All I/O
-pins are 5.5-V tolerant. &lt;h5&gt;</description>
+pins are 5.5-V tolerant. &lt;h5&gt;
+
+&lt;br&gt;
+Find more information in the &lt;a href="https://www.ti.com/lit/ds/symlink/tca9546a.pdf"&gt;datasheet&lt;/a&gt;.</description>
 <gates>
 <gate name="G$1" symbol="TCA9546A" x="0" y="0"/>
 </gates>
