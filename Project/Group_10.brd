@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="2" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="2" altunitdist="mil" altunit="mil"/>
+<grid distance="2" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="2" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -221,7 +221,7 @@
 <hole x="-3.9878" y="88.8746" drill="3"/>
 <hole x="-3.9878" y="48.0568" drill="3"/>
 <text x="-16.6624" y="46.228" size="1.778" layer="21" font="vector" ratio="15">LTEBS srl</text>
-<text x="-1.778" y="66.04" size="1.6764" layer="21" font="vector" ratio="15" rot="R90">MADE IN ITALY</text>
+<text x="-1.778" y="66.04" size="1.4224" layer="21" font="vector" ratio="15" rot="R90">MADE IN ITALY</text>
 </plain>
 <libraries>
 <library name="SparkFun-Capacitors">
@@ -1403,17 +1403,71 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-44.3968" y1="89.1002" x2="-45.98166875" y2="89.1002" width="0.254" layer="1"/>
 <wire x1="-45.98166875" y1="89.1002" x2="-47.117" y2="87.96486875" width="0.254" layer="1"/>
 </signal>
-<signal name="MUX_OUT/2.5C">
+<signal name="MUX_OUT">
 <contactref element="U$2" pad="21"/>
+<contactref element="U4" pad="8"/>
+<wire x1="-27.87" y1="51.47" x2="-28.4892" y2="51.47" width="0.2" layer="1"/>
+<wire x1="-28.4892" y1="51.47" x2="-28.8544" y2="51.1048" width="0.2" layer="1"/>
+<via x="-28.8544" y="51.1048" extent="1-16" drill="0.35"/>
+<wire x1="-28.8544" y1="51.1048" x2="-24.638" y2="55.3212" width="0.2" layer="16"/>
+<wire x1="-25.3492" y1="56.0324" x2="-31.9532" y2="56.0324" width="0.2" layer="16"/>
+<wire x1="-31.9532" y1="56.0324" x2="-38.078" y2="62.1572" width="0.2" layer="16"/>
+<wire x1="-38.078" y1="62.1572" x2="-38.078" y2="63.99308125" width="0.2" layer="16"/>
+<wire x1="-57.15" y1="83.06508125" x2="-57.15" y2="83.82" width="0.2" layer="16"/>
+<wire x1="-38.078" y1="63.99308125" x2="-57.15" y2="83.06508125" width="0.2" layer="16"/>
+<wire x1="-24.638" y1="55.3212" x2="-25.3492" y2="56.0324" width="0.2" layer="16"/>
 </signal>
-<signal name="MUX_A2/2.3C">
+<signal name="MUX_A2">
 <contactref element="U$2" pad="22"/>
+<contactref element="U4" pad="15"/>
+<wire x1="-25.06545" y1="52.3176" x2="-24.9176" y2="52.46545" width="0.2" layer="1"/>
+<wire x1="-25.47" y1="52.27" x2="-25.4224" y2="52.3176" width="0.2" layer="1"/>
+<wire x1="-25.4224" y1="52.3176" x2="-25.06545" y2="52.3176" width="0.2" layer="1"/>
+<wire x1="-24.9176" y1="52.46545" x2="-24.9176" y2="53.169675" width="0.2" layer="1"/>
+<wire x1="-24.9176" y1="53.169675" x2="-26.662725" y2="54.9148" width="0.2" layer="1"/>
+<via x="-32.4612" y="55.3212" extent="1-16" drill="0.35"/>
+<wire x1="-29.7712625" y1="54.9148" x2="-29.8398625" y2="54.9834" width="0.2" layer="1"/>
+<wire x1="-29.8398625" y1="54.9834" x2="-32.1234" y2="54.9834" width="0.2" layer="1"/>
+<wire x1="-32.1234" y1="54.9834" x2="-32.4612" y2="55.3212" width="0.2" layer="1"/>
+<wire x1="-32.4612" y1="55.3212" x2="-32.87468125" y2="55.3212" width="0.2" layer="16"/>
+<wire x1="-32.87468125" y1="55.3212" x2="-40.618" y2="63.06451875" width="0.2" layer="16"/>
+<wire x1="-59.69" y1="83.11588125" x2="-59.69" y2="83.82" width="0.2" layer="16"/>
+<wire x1="-40.618" y1="64.04388125" x2="-59.69" y2="83.11588125" width="0.2" layer="16"/>
+<wire x1="-40.618" y1="63.06451875" x2="-40.618" y2="64.04388125" width="0.2" layer="16"/>
+<wire x1="-26.662725" y1="54.9148" x2="-29.7712625" y2="54.9148" width="0.2" layer="1"/>
 </signal>
-<signal name="MUX_A1/2.3C">
+<signal name="MUX_A1">
 <contactref element="U$2" pad="23"/>
+<contactref element="U4" pad="16"/>
+<wire x1="-25.47" y1="52.67" x2="-25.7176" y2="52.9176" width="0.2" layer="1"/>
+<wire x1="-25.7176" y1="52.9176" x2="-25.7176" y2="53.4713" width="0.2" layer="1"/>
+<wire x1="-25.7176" y1="53.4713" x2="-26.8055" y2="54.5592" width="0.2" layer="1"/>
+<via x="-33.1724" y="54.631" extent="1-16" drill="0.35"/>
+<wire x1="-29.9140375" y1="54.5592" x2="-29.9858375" y2="54.631" width="0.2" layer="1"/>
+<wire x1="-29.9858375" y1="54.631" x2="-33.1724" y2="54.631" width="0.2" layer="1"/>
+<wire x1="-62.23" y1="83.6886" x2="-62.23" y2="83.82" width="0.2" layer="16"/>
+<wire x1="-33.1724" y1="54.631" x2="-34.72448125" y2="54.631" width="0.2" layer="16"/>
+<wire x1="-34.72448125" y1="54.631" x2="-43.202" y2="63.10851875" width="0.2" layer="16"/>
+<wire x1="-43.202" y1="64.6606" x2="-62.23" y2="83.6886" width="0.2" layer="16"/>
+<wire x1="-43.202" y1="63.10851875" x2="-43.202" y2="64.6606" width="0.2" layer="16"/>
+<wire x1="-26.8055" y1="54.5592" x2="-29.9140375" y2="54.5592" width="0.2" layer="1"/>
 </signal>
-<signal name="MUX_A0/2.3C">
+<signal name="MUX_A0">
 <contactref element="U$2" pad="24"/>
+<contactref element="U4" pad="1"/>
+<wire x1="-26.07" y1="52.82" x2="-26.1176" y2="52.8676" width="0.2" layer="1"/>
+<wire x1="-26.1176" y1="52.8676" x2="-26.1176" y2="53.372925" width="0.2" layer="1"/>
+<wire x1="-26.1176" y1="53.372925" x2="-26.795875" y2="54.0512" width="0.2" layer="1"/>
+<wire x1="-26.795875" y1="54.0512" x2="-30.226" y2="54.0512" width="0.2" layer="1"/>
+<via x="-30.226" y="54.0512" extent="1-16" drill="0.35"/>
+<wire x1="-30.226" y1="54.0512" x2="-33.4772" y2="54.0512" width="0.2" layer="16"/>
+<wire x1="-33.4772" y1="54.0512" x2="-33.6296" y2="53.8988" width="0.2" layer="16"/>
+<wire x1="-33.6296" y1="53.8988" x2="-34.8488" y2="53.8988" width="0.2" layer="16"/>
+<wire x1="-44.94308125" y1="62.3096" x2="-45.742" y2="63.10851875" width="0.2" layer="16"/>
+<wire x1="-34.8488" y1="53.8988" x2="-43.2596" y2="62.3096" width="0.2" layer="16"/>
+<wire x1="-45.742" y1="64.792" x2="-64.77" y2="83.82" width="0.2" layer="16"/>
+<wire x1="-43.2596" y1="62.3096" x2="-44.94308125" y2="62.3096" width="0.2" layer="16"/>
+<wire x1="-45.742" y1="63.10851875" x2="-45.742" y2="64.792" width="0.2" layer="16"/>
 </signal>
 <signal name="N$10">
 <contactref element="J8" pad="8"/>
@@ -1477,18 +1531,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <contactref element="J8" pad="1"/>
 <wire x1="-31.75" y1="49.53" x2="-29.01" y2="49.53" width="0.2" layer="1"/>
 <wire x1="-29.01" y1="49.53" x2="-27.27" y2="51.27" width="0.2" layer="1"/>
-</signal>
-<signal name="MUX_OUT/1.4C">
-<contactref element="U4" pad="8"/>
-</signal>
-<signal name="MUX_A0/1.3C">
-<contactref element="U4" pad="1"/>
-</signal>
-<signal name="MUX_A1/1.4C">
-<contactref element="U4" pad="16"/>
-</signal>
-<signal name="MUX_A2/1.4C">
-<contactref element="U4" pad="15"/>
 </signal>
 <signal name="I2C_SCL_0">
 <contactref element="J2" pad="2"/>
